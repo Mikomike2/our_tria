@@ -11,7 +11,7 @@ public class ProdMax {
         int size = snap.nextInt();
         int[] array = new int[size];
         System.out.println("you the array Values:");
-        for (int i = 0; i < size; i++)
+        for (int i = 0; i < size; i++) 
             array[i] = snap.nextInt();
         int[] pailrrvfedwd = findpailrrvfedwd(array);
         System.out.println(
