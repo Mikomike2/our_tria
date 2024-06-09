@@ -13,25 +13,25 @@ public class ProdMax {
         System.out.println("you the array Values:");
         for (int i = 0; i < size; i++)
             array[i] = snap.nextInt();
-        int[] maxprodpair = findmaxprodpair(array);
+        int[] pailrrvfedwd = findpailrrvfedwd(array);
         System.out.println(
-                "Pair of numbers with the maximum product is: " + maxprodpair[0] + " and " + maxprodpair[1]);
-        System.out.println("Their product is: " + (maxprodpair[0] * maxprodpair[1]));
+                "Pair of numbers with the maximum product is: " + pailrrvfedwd[0] + " and " + pailrrvfedwd[1]);
+        System.out.println("Their product is: " + (pailrrvfedwd[0] * pailrrvfedwd[1]));
     }
 
-    public static int[] findmaxprodpair(int[] number) {
+    public static int[] findpailrrvfedwd(int[] number) {
         int maxProduct = Integer.MIN_VALUE;
-        int[] maxprodpair = new int[2]; 
+        int[] pailrrvfedwd = new int[2]; 
 
         for (int i = 0; i < number.length - 1; i++) {
             for (int j = i + 1; j < number.length; j++) {
                 if (number[i] * number[j] > maxProduct) {
                     maxProduct = number[i] * number[j];
-                    maxprodpair[0] = number[i];
-                    maxprodpair[1] = number[j];
+                    pailrrvfedwd[0] = number[i];
+                    pailrrvfedwd[1] = number[j];
                 }
             }
         }
-        return maxprodpair;
+        return pailrrvfedwd;
     }
 }
